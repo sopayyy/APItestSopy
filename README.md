@@ -7,13 +7,17 @@ This repository contains automated tests for API endpoints using Mocha, Chai, an
 1. Clone this repository to your local machine.
 
 2. Install the dependencies:
-   ```bash
-   npm install
+```bash
+  npm install
+  npm install axios@^0.24.0 chai@^4.3.4 mocha@^9.1.3 --save-dev
+```
 
 ## Running Tests
 To run the tests, use the following command:
 ```bash
-  npx mocha test/api-tests.js
+  npx mocha api-tests.js
+  OR
+  node_modules/.bin/mocha api-tests.js
 ```
 
 ## Test Case 1: Retrieve Todos
